@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            style="@style/ListFragmentProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dip"
+            android:singleLine="true"
+            android:text="@string/wait"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/actionbar_color_light" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/datagrid_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/operation_parent"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone"
+            android:background="@color/actionbar_color_light"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/page_first"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_skip_previous_white_24dp"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/page_previous"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_play_arrow_left_white_24dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:text="1"
+                android:inputType="number"
+                android:imeOptions="actionSearch"
+                android:background="@drawable/edittext_background"
+                android:id="@+id/page"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/total_page"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/page_next"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_play_arrow_white_24dp"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/page_last"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_skip_next_white_24dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <cn.wq.myandroidtoolspro.views.DataGrid
+            android:id="@+id/datagrid"
+            android:layout_below="@id/operation_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</FrameLayout>

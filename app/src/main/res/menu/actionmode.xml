@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/selectAll"
+        android:icon="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+        android:title="@string/selectAll"
+        yourapp:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/copy"
+        android:icon="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:title="@string/copy"
+        yourapp:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/ok"
+        android:icon="@drawable/ic_send_white"
+        android:title="@string/ok"
+        yourapp:showAsAction="ifRoom">
+    </item>
+
+</menu>

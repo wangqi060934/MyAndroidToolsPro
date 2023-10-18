@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ff04aeda -->
+    <color name="actionbar_color">#FF2196F3</color>
+    <color name="actionbar_color_dark">#FF1976D2</color>
+    <color name="actionbar_color_light">#662196F3</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <!-- log -->
+    <color name="log_debug">#ff00aeda</color>
+    <color name="log_info">#ff007f00</color>
+    <color name="log_warn">#ffff7f00</color>
+    <color name="log_error">#ffff0000</color>
+    
+    <color name="blue_grey_500">#FF607D8B</color>
+    <color name="blue_grey_700">#FF455A64</color>
+    <color name="blue_grey_800">#FF37474F</color>
+    <color name="blue_grey_900">#FF263238</color>
+    <color name="teal_500">#ff009688</color>
+
+    <color name="floating_background_default">#50000000</color>
+    <color name="splash_dark_background">#ff212121</color>
+    <color name="dark_black">#1A191B</color>
+    <color name="dark_black_2">#2E2D2E</color>
+    <color name="dark_black_3">#312F31</color>
+    <color name="text_primary_black">#979297</color>
+    <color name="text_second_black">#716D70</color>
+
+</resources>

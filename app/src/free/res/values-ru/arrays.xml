@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ALL_ACTIONS_SUMMARY">
+        <item>Выполнение загрузки</item>
+        <item>Изменение подключения к сети</item>
+        <item>Изменение подключения к Wi-Fi</item>
+        <item>Включение/ отключение Wi-Fi</item>
+        <item>Изменение времени</item>
+        <item>Изменение временной зоны</item>
+        <item>Установка приложения</item>
+        <item>Удаление приложения</item>
+        <item>Включение экрана</item>
+        <item>Отключение экрана</item>
+        <item>Действия пользователя</item>
+    </string-array>
+    <string-array name="app_manage_title">
+        <item>Включенные</item>
+        <item>Отключенные</item>
+        <item>Удаленные (системные)</item>
+    </string-array>
+    <string-array name="backup_choose">
+        <item>Сервисы</item>
+        <item>Ресиверы</item>
+        <item>Активности</item>
+        <item>Провайдеры</item>
+    </string-array>
+    <string-array name="component_listfragment_title">
+        <item>Общие</item>
+        <item>Системные</item>
+    </string-array>
+    <string-array name="log_level">
+        <item>Детали</item>
+        <item>Отладка</item>
+        <item>Информация</item>
+        <item>Предупреждения</item>
+        <item>Ошибки</item>
+        <item>Обнаружение</item>
+    </string-array>
+    <string-array name="receiver_fragment_title">
+        <item>Автозапуск</item>
+        <item>Общие</item>
+        <item>Системные</item>
+    </string-array>
+    <string-array name="restore_choose">
+        <item>Отключить</item>
+        <item>Включить</item>
+    </string-array>
+    <string-array name="sort_app">
+        <item>По алфавиту</item>
+        <item>Время установки</item>
+        <item>Время включения/отключения</item>
+    </string-array>
+    <string-array name="sort_service">
+        <item>По алфавиту</item>
+        <item>По запущенным</item>
+        <item>По отключенным</item>
+    </string-array>
+    <string-array name="theme_options">
+        <item>дефолт</item>
+        <item>Темная</item>
+        <item>Ночь</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="icon_size">30dp</dimen>
+    <!--<dimen name="design_grid_navigation_item_padding_top">8dp</dimen>-->
+
+</resources>

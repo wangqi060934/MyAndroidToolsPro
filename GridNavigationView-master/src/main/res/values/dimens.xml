@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_grid_navigation_max_width">320dp</dimen>
+    <dimen name="design_grid_navigation_elevation">16dp</dimen>
+    <dimen name="design_grid_navigation_icon_padding">20dp</dimen>   <!-- 32dp -->
+    <dimen name="design_grid_navigation_icon_size">24dp</dimen>
+    <dimen name="design_grid_navigation_separator_vertical_padding">8dp</dimen>
+    <dimen name="design_grid_navigation_padding_top_default">0dp</dimen>
+    <dimen name="design_grid_navigation_padding_bottom">8dp</dimen>
+    <dimen name="design_grid_navigation_item_padding_top">6dp</dimen>
+</resources>

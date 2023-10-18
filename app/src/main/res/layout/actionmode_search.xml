@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp"
+              android:paddingStart="10dp">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:imeOptions="actionSearch"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textIsSelectable="false"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"/>
+
+    <ImageButton
+        android:id="@+id/previous"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/ic_keyboard_arrow_up_white_24dp"/>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/ic_keyboard_arrow_down_white_24dp"/>
+    <!--
+    <ImageButton
+        android:id="@+id/close"
+        android:src="@drawable/ic_close_white_24dp"
+        android:layout_width="45dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="?attr/actionBarSize"/>
+        -->
+</LinearLayout>

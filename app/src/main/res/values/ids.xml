@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_sort_id" type="id"/>
+    <item name="view_manifest" type="id"/>
+    <item name="backup" type="id"/>
+    <item name="open_database" type="id"/>
+    <item name="process_root_default" type="id"/>
+    <item name="process_refresh" type="id"/>
+    <item name="spinner_language" type="id"/>
+    <item name="spinner_theme" type="id"/>
+    <item name="spinner_pm_channer" type="id"/>
+</resources>

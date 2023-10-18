@@ -1,0 +1,74 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/component_info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/service"
+                    android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+                    android:title="@string/service" />
+                <item
+                    android:id="@+id/receiver"
+                    android:icon="@drawable/ic_mood_bad_black_24dp"
+                    android:title="@string/broadcast_receiver" />
+                <item
+                    android:id="@+id/activity"
+                    android:icon="@drawable/ic_sentiment_neutral_black_24dp"
+                    android:title="@string/activity" />
+                <item
+                    android:id="@+id/provider"
+                    android:icon="@drawable/ic_insert_emoticon_white"
+                    android:title="@string/content_provider" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/data_info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/preferece"
+                    android:icon="@drawable/ic_description_white_24dp"
+                    android:title="@string/sharedPreferences" />
+                <item
+                    android:id="@+id/database"
+                    android:icon="@drawable/ic_sqlite"
+                    android:title="@string/database" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/running_info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/process"
+                    android:icon="@drawable/ic_adb_white"
+                    android:title="@string/process" />
+                <item
+                    android:id="@+id/logcat"
+                    android:icon="@drawable/ic_bug_report_white"
+                    android:title="@string/logcat" />
+                <item
+                    android:id="@+id/uid"
+                    android:icon="@drawable/ic_dns_white"
+                    android:title="@string/Uid"/>
+                <item
+                    android:id="@+id/current"
+                    android:icon="@drawable/ic_layers_white_24dp"
+                    android:title="@string/current" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/other_info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/apps"
+                    android:icon="@drawable/ic_settings_applications_white"
+                    android:title="@string/apps" />
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_info_white"
+                    android:title="@string/about" />
+            </group>
+        </menu>
+    </item>
+</menu>

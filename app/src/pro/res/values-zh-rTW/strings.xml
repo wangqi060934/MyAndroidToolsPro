@@ -1,0 +1,171 @@
+<resources>
+    <!-- navigation-->
+    <string name="component_info">組件資訊</string>
+    <string name="service">服務</string>
+    <string name="broadcast_receiver">廣播接收器</string>
+    <string name="activity">活動</string>
+    <string name="content_provider">內容供應程式</string>
+    <string name="data_info">數據資訊</string>
+    <string name="sharedPreferences">首選項</string>
+    <string name="database">數據庫</string>
+    <string name="running_info">運行資訊</string>
+    <string name="process">進程</string>
+    <string name="logcat">日誌</string>
+    <string name="other_info">其它資訊</string>
+    <string name="apps">應用程式</string>
+    <string name="about">關於</string>
+
+    <string name="toast_adb">在2.3或之前的android版本中，您必須打開USB偵錯！</string>
+    <string name="wait">正在處理中…</string>
+
+    <string name="search">搜尋</string>
+    <string name="save">儲存</string>
+    <string name="refresh">更新</string>
+    <string name="level">等級</string>
+    <string name="hint_app_search">按名稱搜尋</string>
+    <string name="hint_process_search">按 pid/uid 搜尋</string>
+    <string name="hint_logcat_search">按 pid/tag/內容 搜尋</string>
+    <string name="hint_component_search">按名稱搜尋</string>
+    <string name="multi_select">多選模式</string>
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="clear">清除</string>
+    <string name="rate">評價</string>
+    <string name="share">分享</string>
+    <string name="share_information">分享一款Android程式: MyAndroidTools Pro, http：//goo.gl/NB9bOK</string>
+    <string name="failed_to_gain_root">取得root權限失敗！</string>
+    <string name="full_or_short">全稱/縮寫</string>
+    <string name="disallow_disable_admob">不允許禁用廣告活動</string>
+    <string name="format_save_path">儲存路徑為：%s</string>
+    <string name="more">更多</string>
+    <string name="need_external_storage">沒有發現記憶卡！</string>
+
+    <string name="query">查詢</string>
+    <string name="selectAll">全選/取消全選</string>
+    <string name="pre_value">值：</string>
+    <string name="edit">編輯：</string>
+    <string name="input_error_int">非有效integer值。</string>
+    <string name="input_error_long">非有效long值。</string>
+    <string name="input_error_float">非有效float值。</string>
+    <string name="type">類型</string>
+    <string name="name">名稱</string>
+    <string name="value">值</string>
+    <string name="format_type">類型：%s</string>
+    <string name="format_name">名稱：%s</string>
+
+    <string name="backup">備份</string>
+    <string name="backup_disabled_of_an_app">僅備份此App所有已禁用的組件</string>
+    <string name="backup_only_3rd_party">僅第三方App</string>
+    <string name="restore">還原</string>
+    <string name="backup_edit">編輯</string>
+    <string name="media_not_mounted">記憶卡未掛載！</string>
+    <string name="operation_failed">操作失敗！</string>
+    <string name="uninstall_restore_success_toast">這個app將會在你下一次重啟手機之後出現在你的手機上。</string>
+    <string name="operation_done">已完成！</string>
+    <string name="backup_category">僅針對已禁用的組件：</string>
+    <string name="app_has_been_uninstalled">此程式已被解除安裝。</string>
+    <string name="detail">詳細</string>
+    <string name="sort_by">排序</string>
+    <string name="copy">複製</string>
+    <string name="copy_toast">已複製到剪切板。</string>
+    <string name="delete">刪除</string>
+    <string name="stop">停止</string>
+    <string name="title_apps">應用程式</string>
+    <string name="hint_app_manage_search">按應用程式/包名搜尋</string>
+
+    <string name="installed_time">安裝/更新時間：</string>
+    <string name="package_name">包名：</string>
+    <string name="package_name_system">包名：(系統應用)</string>
+    <string name="package_name_third_party">包名：(第三方應用)</string>
+    <string name="apk_path">Apk路徑：</string>
+    <string name="app_manage_action">操作：</string>
+    <string name="storage">儲存空間：</string>
+    <string name="enable">啟用</string>
+    <string name="disable">禁用</string>
+    <string name="clear_data">清理數據</string>
+    <string name="clear_cache">清理快取</string>
+    <string name="data">數據</string>
+    <string name="cache">快取</string>
+    <string name="open">打開</string>
+    <string name="app_manage_all_info">查看所有組件資訊</string>
+    <string name="empty">空</string>
+    <string name="see_all_actions">全部/部分</string>
+
+    <string name="showAfterPackageAdd">安裝新程式後立刻顯示所有組件資訊。</string>
+
+    <!-- logcat -->
+    <string name="pre_process_name">進程名：%s</string>
+    <string name="pre_pkg_list">包名：</string>
+    <string name="pre_level">等級：</string>
+    <string name="pre_application">程式名稱：</string>
+    <string name="pre_time">時間：%s</string>
+    <string name="pre_log">日誌內容：</string>
+
+    <!-- new -->
+    <string name="permission_request_failed">此功能需要訪問儲存設備，請在系統設定中允許本app訪問儲存設備。</string>
+    <string name="hint_first_time">提示</string>
+    <string name="enabled">已啟用</string>
+    <string name="disabled">已禁用</string>
+    <string name="running_in_background">正在後台運行</string>
+    <string name="toast_piracy">你可能是盜版程式受害者，你可以從Google Play或者亞馬遜市場上購買。</string>
+    <string name="language_english">使用英文</string>
+    <string name="add">增加</string>
+    <string name="clone_record">複製數據</string>
+    <string name="uninstall">解除安裝</string>
+    <string name="create_table_statement">建表語句</string>
+    <string name="search_by_action_name">按事件名稱搜尋</string>
+    <string name="view_manifest">查看manifest</string>
+    <string name="search_component_in_all_apps">在所有App中搜尋組件</string>
+    <string name="search_in_all_services">在所有App中搜尋服務</string>
+    <string name="search_in_all_receiver">在所有App中搜尋廣播接收器</string>
+    <string name="search_in_all_activity">在所有App中搜尋活動</string>
+    <string name="search_in_all_provider">在所有App中搜尋內容供應程式</string>
+
+    <string name="backup_file_title">請選擇一個備份文件：(/sdcard/myandroidtools/*)</string>
+    <string name="backup_delete_failed">請先選擇一個備份文件，並確保該文件存在。</string>
+    <string name="backup_rename_title">重新命名備份文件</string>
+    <string name="backup_file_exists">/sdcard/myandroidtools/中已存在同名的文件。</string>
+    <string name="backup_file_name_empty">文件名不能為空</string>
+    <string name="backup_file_rename_failed">重新命名失敗。</string>
+    <string name="open_database_in_sdcard">打開SDcard中的數據庫文件</string>
+    <string name="choose_db_from_sdcard">選擇SDcard中的數據庫文件</string>
+    <string name="invalid_db_file">這不是一個有效的數據庫文件。</string>
+    <string name="backup_done">備份成功！備份路徑為 %s</string>
+
+    <string name="warning">警告</string>
+    <string name="uninstall_message">確認是否要解除安裝此程式：%s</string>
+
+    <!-- current -->
+    <string name="current">目前</string>
+    <string name="current_activity_accessibility_service_name">目前活動（MAT Pro）</string>
+    <string name="current_accessibility_service_summary">MyAndroidTools Pro 需要開啟本服務才能顯示目前活動。</string>
+    <string name="current_activity_title">顯示目前活動</string>
+    <string name="current_activity_summary">需要開啟無障礙服務</string>
+    <string name="current_fragment_title">顯示目前Fragment</string>
+    <string name="current_fragment_time_title">間隔時間（毫秒）</string>
+    <string name="current_fragment_summary">需要Root權限，可移動（注意：本功能非常消耗性能，最好用完之後就關閉）</string>
+    <string name="accessibility_dialog_title">溫馨提示</string>
+    <string name="accessibility_dialog_message_enable">您需要去系統設定中開啟「目前活動（MAT Pro）」輔助服務。\r\n\r\n點擊確定去開啟它！</string>
+    <string name="accessibility_dialog_message_disable">您需要去系統設定中關閉「目前活動（MAT Pro）」輔助服務。\r\n\r\n點擊確定去關閉它！</string>
+    <string name="process_root_default">預設使用Root權限開啟</string>
+    <string name="current_activity_show_full_name">顯示完整名稱</string>
+    <string name="current_activity_move_title">移動模式</string>
+    <string name="current_activity_move_summary">在移動模式下，你可以隨意拖動浮動窗口（注意：會佔用目前區域的點擊事件）</string>
+    <string name="current_fragment_empty">*沒有發現目前的Fragment*</string>
+    <string name="current_floating_hint">1.在某些定製系統中，您需要在權限管理中開啟本程式的「顯示懸浮窗」權限！\r\n2.在 Android 6.0 之後，您需要在程式管理中開啟本程式的「允許出現在其它程式之上」權限！</string>
+    <string name="floating_permission_hint">您需要先授予本程式「允許出現在其它程式之上」的權限才能使用此功能。</string>
+    <string name="textsize">文字大小</string>
+    <string name="open_lincense">開源許可證</string>
+    <string name="current_activity_summary_root">預設使用Root權限開啟</string>
+
+    <string name="parent_directory">上一層</string>
+    <string name="usage_permission_hint">您需要先授予本應用“允許使用訪問記錄”的權限才能使用此功能.</string>
+    <string name="theme">主題</string>
+    <string name="theme_default">默認</string>
+    <string name="theme_dark">深色</string>
+    <string name="theme_night">夜間</string>
+    <string name="root_failed_to_get_running_service">警告：在Android Oreo或以上的設備中必須有Root權限才能獲取正在運行的服務信息</string>
+    <string name="component_not_exist">這個組件實際上是不存在的.</string>
+    <string name="a_component_not_exist">某個組件實際上是不存在的.</string>
+
+</resources>

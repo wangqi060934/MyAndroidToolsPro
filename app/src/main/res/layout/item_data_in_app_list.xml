@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:minHeight="?attr/listPreferredItemHeightSmall"
+    android:orientation="horizontal"
+    android:paddingStart="0dp"
+    android:paddingLeft="0dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_padding"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:scaleType="fitXY"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon"
+        android:layout_toRightOf="@id/icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?android:attr/textColorPrimary"
+        tools:text="释放时间老地方就是两地分居了数据地方逻辑熟练度附近水力发电看吉林省会计法第六届" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/icon"
+        android:layout_toRightOf="@id/icon"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp"
+        tools:text="lfjsldkfl四六级发了圣诞节福利塑料袋开发商来得及福利速度快解放路上看见对方隆盛科技临水临电积分 " />
+</RelativeLayout>

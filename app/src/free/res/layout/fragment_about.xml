@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    -->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ProgressBar
+                    android:id="@+id/icon"
+                    style="@style/ListFragmentProgressBar"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/icon"
+                    android:layout_toRightOf="@id/icon"
+                    android:text="@string/app_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_toEndOf="@id/icon"
+                    android:layout_toRightOf="@id/icon"
+                    tools:text="1.8"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/version"
+                    android:layout_toEndOf="@id/icon"
+                    android:layout_toRightOf="@id/icon"
+                    android:text="@string/email"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email"
+                    android:layout_toEndOf="@id/icon"
+                    android:layout_toRightOf="@id/icon"
+                    android:text="@string/website"
+                    android:autoLink="web"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"/>
+
+            <TextView
+                android:id="@+id/backup_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/backup_category"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/log_error" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backup"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/backup" />
+
+                <Button
+                    android:id="@+id/restore"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/restore" />
+
+            </LinearLayout>
+
+            <!--
+            <TextView
+                android:id="@+id/backup_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:background="?android:attr/listDivider" />
+
+            <!--
+            <CheckBox
+                android:id="@+id/showAfterPackageAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/showAfterPackageAdd"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <CheckBox
+                android:id="@+id/english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/language_english"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <CheckBox
+                android:id="@+id/darkTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/drak_theme"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            -->
+
+            <include
+                android:id="@+id/showAfterPackageAdd"
+                layout="@layout/line_switch" />
+
+            <include
+                android:id="@+id/english"
+                layout="@layout/line_spinner" />
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/theme_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/theme_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/theme_spinner"
+                    android:layout_toStartOf="@id/theme_spinner"
+                    android:text="@string/theme"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+            </RelativeLayout>
+            -->
+            <include
+                android:id="@+id/theme_parent"
+                layout="@layout/line_spinner" />
+
+            <include
+                android:id="@+id/pm_channel"
+                layout="@layout/line_spinner" />
+
+            <!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/pro_version"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/pro_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/version_selector"
+                android:drawableLeft="@drawable/ic_launcher_pro"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_launcher_pro"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/pro_app_name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                -->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

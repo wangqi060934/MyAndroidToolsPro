@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/value_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/operation"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Spinner
+            android:id="@+id/fields"
+            android:gravity="end"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/operation"
+            android:layout_toLeftOf="@id/operation" />
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fields" />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/value"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

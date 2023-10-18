@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/pre_application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_application"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pre_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_tag"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/pre_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_level"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pre_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_log"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textIsSelectable="true"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok" />
+    </LinearLayout>
+
+</ScrollView>

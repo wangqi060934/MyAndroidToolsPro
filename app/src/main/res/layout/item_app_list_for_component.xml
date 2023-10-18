@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/listPreferredItemHeightSmall"
+              android:background="?attr/selectableItemBackground"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/activity_padding"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <TextView
+        android:id="@+id/running_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/actionbar_color"/>
+
+    <TextView
+        android:id="@+id/disabled_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/holo_red_light"/>
+
+    <TextView
+        android:id="@+id/total_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+</LinearLayout>

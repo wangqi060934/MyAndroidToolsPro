@@ -1,0 +1,197 @@
+<resources>
+    <!-- navigation-->
+    <string name="component_info">组件信息</string>
+    <string name="service">服务</string>
+    <string name="broadcast_receiver">广播接收器</string>
+    <string name="activity">活动</string>
+    <string name="content_provider">内容提供器</string>
+    <string name="data_info">数据信息</string>
+    <string name="sharedPreferences">首选项</string>
+    <string name="database">数据库</string>
+    <string name="running_info">运行信息</string>
+    <string name="process">进程</string>
+    <string name="logcat">日志</string>
+    <string name="other_info">其它信息</string>
+    <string name="apps">应用程序</string>
+    <string name="about">关于</string>
+
+    <string name="toast_adb">在2.3或之前的Android版本中，您必须打开USB调试!</string>
+    <string name="wait">正在处理中&#8230;</string>
+
+    <string name="search">搜索</string>
+    <string name="save">保存</string>
+    <string name="refresh">刷新</string>
+    <string name="level">等级</string>
+    <string name="hint_app_search">按名称搜索</string>
+    <string name="hint_process_search">按 pid/uid 搜索</string>
+    <string name="hint_logcat_search">按 pid/tag/内容 搜索</string>
+    <string name="hint_component_search">按名称搜索</string>
+    <string name="multi_select">多选模式</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="clear">清除</string>
+    <string name="rate">评价</string>
+    <string name="share">分享</string>
+    <string name="donate">捐赠</string>
+    <string name="failed_to_gain_root">获取root权限失败!</string>
+    <string name="full_or_short">全称/缩写</string>
+    <string name="disallow_disable_admob">不允许禁用admob activity.</string>
+    <string name="format_save_path">保存路径为：%s</string>
+    <string name="more">更多</string>
+    <string name="need_external_storage">没有发现存储卡!</string>
+
+    <string name="query">查询</string>
+    <string name="selectAll">全选/取消全选</string>
+    <string name="pre_value">值：</string>
+    <string name="edit">编辑：</string>
+    <string name="input_error_int">非有效integer值.</string>
+    <string name="input_error_long">非有效long值.</string>
+    <string name="input_error_float">非有效float值.</string>
+    <string name="type">类型</string>
+    <string name="name">名称</string>
+    <string name="value">值</string>
+    <string name="format_type">类型：%s</string>
+    <string name="format_name">名称：%s</string>
+
+    <string name="backup">备份</string>
+    <string name="backup_disabled_of_an_app">仅备份此App所有已禁用的组件</string>
+    <string name="backup_only_3rd_party">仅第三方App</string>
+    <string name="restore">还原</string>
+    <string name="backup_edit">编辑</string>
+    <string name="media_not_mounted">存储卡未挂载!</string>
+    <string name="operation_failed">操作失败!</string>
+    <string name="uninstall_restore_success_toast">这个app将会在你下一次重启手机之后出现在你的手机上.</string>
+    <string name="operation_done">已完成!</string>
+    <string name="backup_category">仅针对已禁用的组件：</string>
+    <string name="app_has_been_uninstalled">此app已被卸载.</string>
+    <string name="detail">详细</string>
+    <string name="sort_by">排序</string>
+    <string name="copy">复制</string>
+    <string name="copy_toast">已复制到剪切板.</string>
+    <string name="delete">删除</string>
+    <string name="stop">停止</string>
+    <string name="title_apps">应用程序</string>
+    <string name="hint_app_manage_search">按 App名/包名 搜索</string>
+
+    <string name="installed_time">安装/更新时间：</string>
+    <string name="package_name">包名：</string>
+    <string name="package_name_system">包名：(系统应用)</string>
+    <string name="package_name_third_party">包名：(第三方应用)</string>
+    <string name="apk_path">Apk路径：</string>
+    <string name="app_manage_action">操作：</string>
+    <string name="storage">存储空间：</string>
+    <string name="enable">启用</string>
+    <string name="disable">禁用</string>
+    <string name="clear_data">清理数据</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="data">数据</string>
+    <string name="cache">缓存</string>
+    <string name="open">打开</string>
+    <string name="app_manage_all_info">查看所有组件信息</string>
+    <string name="empty">空</string>
+    <string name="see_all_actions">全部/部分</string>
+
+    <string name="showAfterPackageAdd">安装新应用后立刻显示所有组件信息</string>
+
+    <!-- logcat -->
+    <string name="pre_process_name">进程名：%s</string>
+    <string name="pre_pkg_list">包名：</string>
+    <string name="pre_level">等级：</string>
+    <string name="pre_application">应用名称：</string>
+    <string name="pre_time">时间：%s</string>
+    <string name="pre_log">日志内容：</string>
+
+    <!-- new -->
+    <string name="permission_request_failed">此功能需要访问存储设备，请在系统设置中允许本app访问存储设备。</string>
+    <string name="hint_first_time">提示</string>
+    <string name="enabled">已启用</string>
+    <string name="disabled">已禁用</string>
+    <string name="running_in_background">正在后台运行</string>
+    <string name="language_english">使用英语环境</string>
+    <string name="add">添加</string>
+    <string name="clone_record">复制数据</string>
+    <string name="delete_current_page">删除本页数据</string>
+    <string name="delete_current_page_warning">您确认要删除当前页面的所有数据？</string>
+    <string name="uninstall">卸载</string>
+    <string name="create_table_statement">建表语句</string>
+    <string name="search_by_action_name">按事件名称搜索</string>
+    <string name="view_manifest">查看manifest</string>
+    <string name="search_component_in_all_apps">在所有App中搜索组件</string>
+    <string name="search_in_all_services">在所有App中搜索服务</string>
+    <string name="search_in_all_receiver">在所有App中搜索广播接收器</string>
+    <string name="search_in_all_activity">在所有App中搜索活动</string>
+    <string name="search_in_all_provider">在所有App中搜索Provider</string>
+
+    <string name="backup_file_title">请选择一个备份文件：(/sdcard/myandroidtools/*)</string>
+    <string name="backup_delete_failed">请先选择一个备份文件，并确保该文件存在.</string>
+    <string name="backup_rename_title">重命名备份文件</string>
+    <string name="backup_to_ifw_format">以Intent防火墙格式另存备份文件</string>
+    <string name="backup_file_exists">/sdcard/myandroidtools/中已存在同名的文件.</string>
+    <string name="backup_file_ext_wrong">备份文件必须以“.ifw”为后缀</string>
+    <string name="backup_file_name_empty">文件名不能为空</string>
+    <string name="backup_content_empty">备份内容不能为空</string>
+    <string name="backup_file_rename_failed">重命名失败.</string>
+    <string name="open_database_in_sdcard">打开SDcard中的数据库文件</string>
+    <string name="choose_db_from_sdcard">请选择SDcard中的数据库文件</string>
+    <string name="invalid_db_file">这不是一个有效的数据库文件.</string>
+    <string name="backup_done">备份成功！备份路径为 %s</string>
+
+    <string name="warning">警告</string>
+    <string name="uninstall_message">确认是否要卸载此应用：%s</string>
+
+    <!-- current -->
+    <string name="current">当前</string>
+    <string name="current_activity_accessibility_service_name">当前Activity（MAT）</string>
+    <string name="current_accessibility_service_summary">MyAndroidTools 需要开启本服务才能显示当前Activity。</string>
+    <string name="current_activity_title">显示当前Activity</string>
+    <string name="current_activity_summary">需要开启无障碍服务</string>
+    <string name="current_activity_summary_root">需要Root权限</string>
+
+    <string name="current_fragment_title">显示当前Fragment</string>
+    <string name="current_fragment_time_title">间隔时间（毫秒）</string>
+    <string name="current_fragment_summary">需要Root权限，可移动（注意：本功能非常消耗性能，最好用完之后就关闭）</string>
+    <string name="accessibility_dialog_title">温馨提示</string>
+    <string name="accessibility_dialog_message_enable">您需要去系统设置中开启“当前Activity（MAT）”辅助服务。\r\n\r\n点击确定去开启它！</string>
+    <string name="accessibility_dialog_message_disable">您需要去系统设置中关闭“当前Activity（MAT）”辅助服务。\r\n\r\n点击确定去关闭它！</string>
+    <string name="process_root_default">默认使用Root权限获取</string>
+    <string name="current_activity_show_full_name">显示完整名称</string>
+    <string name="current_activity_move_title">移动模式</string>
+    <string name="current_activity_move_summary">在移动模式下，你可以随意拖动浮动窗口（注意：会占用当前区域的点击事件）</string>
+    <string name="current_fragment_empty">*没有发现当前的Fragment*</string>
+    <string name="current_floating_hint">1.在某些定制系统中，您需要在权限管理中开启本应用的“显示悬浮窗”权限！\n2.从 Android 6.0 之后，您需要在应用管理中开启本应用的“允许出现在其它应用之上”权限！</string>
+    <string name="floating_permission_hint">您需要先授予本应用“允许出现在其它应用之上”的权限才能使用此功能。</string>
+    <string name="textsize">文字大小</string>
+    <string name="open_lincense">开放源代码协议</string>
+
+    <!-- new -->
+    <string name="usage_permission_hint">您需要先授予本应用“允许使用访问记录”的权限才能使用此功能.</string>
+    <string name="theme">主题</string>
+    <string name="parent_directory">上一层</string>
+    <string name="root_failed_to_get_running_service">警告：在Android Oreo或以上的设备中必须有Root权限才能获取正在运行的服务信息</string>
+    <string name="component_not_exist">这个组件实际上是不存在的.</string>
+    <string name="a_component_not_exist">某个组件实际上是不存在的.</string>
+
+    <string name="choose_language">语言</string>
+    <string name="share_information">分享一款Android Root工具：MyAnroidTools。（https://zh.myandroidtools.com）</string>
+    <string name="offical_website">https://zh.myandroidtools.com</string>
+    <string name="pm_channel">禁用方式</string>
+    <string name="shizuku_not_installed">请先安装"Shizuku Manager"</string>
+    <string name="shizuku_auth_failed">Shizuku 授权失败！</string>
+    <string name="shizuku_run_command_failed">Shizuku调用失败：%s！</string>
+    <string name="shizuku_auth_success">Shizuku 授权成功！</string>
+    <string name="ifw_save_failed">保存IFW文件失败!</string>
+    <string name="close_bugly">关闭崩溃信息上传</string>
+    <string name="update_check">检查更新</string>
+    <string name="has_new_version">检测到新版本</string>
+    <string name="no_new_version">当前版本已是最新版本</string>
+    <string name="version_title">版本号：</string>
+    <string name="info_title">版本说明：</string>
+    <string name="download">下载</string>
+    <string name="load_ifw_by_root_failed">获取IFW数据失败</string>
+    <string name="checking_new_version">正在检查新版本&#8230;</string>
+    <string name="check_version_failed">检测是否有新版本失败</string>
+    <string name="failed_to_load_backup_file">加载此备份文件失败！</string>
+    <string name="hint_delete_empty_backup_file">此备份文件中未发现有效的组件，是否删除此文件？</string>
+    <string name="hint_pm_channel_ifw">是否需要整合所有IFW数据？</string>
+
+</resources>

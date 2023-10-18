@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/actionbar_color"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/level"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/level"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/pid"
+        android:layout_toRightOf="@id/pid"
+        android:textSize="12sp"
+        android:typeface="monospace"/>
+
+</RelativeLayout>

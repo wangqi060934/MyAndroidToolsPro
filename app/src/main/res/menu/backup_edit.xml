@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toggle_name"
+        android:icon="@drawable/ic_full_name_white"
+        android:title="@string/full_or_short"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_save_white"
+        android:title="@string/save"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/rename"
+        android:title="@string/backup_rename_title"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/save_as_ifw"
+        android:visible="false"
+        android:title="@string/backup_to_ifw_format"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,92 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/actionbar_color</item>
+        <item name="colorPrimaryDark">@color/actionbar_color_dark</item>
+        <item name="colorAccent">@color/actionbar_color</item>
+        <item name="colorControlActivated">@color/actionbar_color_dark</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="actionModeBackground">@color/blue_grey_500</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme"/>
+    <style name="AppThemeDark" parent="AppBaseThemeDark"/>
+    <style name="AppThemeBlack" parent="AppBaseThemeBlack"/>
+
+    <style name="AppTheme.AppInfoTheme">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_top</item>
+    </style>
+    <style name="AppThemeDark.AppInfoTheme">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_top</item>
+    </style>
+    <style name="AppThemeBlack.AppInfoTheme">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_top</item>
+    </style>
+
+    <style name="AppBaseThemeBlack" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlActivated">@color/actionbar_color_dark</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="actionModeBackground">@color/blue_grey_800</item>
+        <item name="autoCompleteTextViewStyle">@style/CustomCursorEdittextView</item>
+        <!--<item name="android:windowBackground">@android:color/black</item>-->
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="colorPrimary">@color/dark_black_2</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/dark_black_3</item>
+        <item name="android:textColor">@color/text_primary_black</item>
+        <item name="android:textColorPrimary">@color/text_primary_black</item>
+        <item name="android:textColorSecondary">@color/text_second_black</item>
+        <item name="android:textColorTertiary">@color/text_second_black</item>
+        <!-- colorButtonNormal 按钮默认，colorControlHighlight 按钮点击-->
+        <item name="colorControlHighlight">@color/actionbar_color_dark</item>
+        <!--<item name="dialogTheme">修改 dialog 默认背景颜色的关键</item>-->
+        <!-- android.support.v7.app.AlertDialog.resolveDialogTheme() -->
+        <item name="colorBackgroundFloating">@color/dark_black</item>
+        <!-- android.support.v7.app.AlertController.createListView() -->
+        <item name="textColorAlertDialogListItem">@color/text_primary_black</item>
+    </style>
+
+    <style name="AppBaseThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/actionbar_color</item>
+        <item name="colorPrimaryDark">@color/actionbar_color_dark</item>
+        <item name="colorAccent">@color/actionbar_color</item>
+        <item name="actionModeBackground">@color/blue_grey_500</item>
+        <item name="colorControlActivated">@color/actionbar_color_dark</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="autoCompleteTextViewStyle">@style/CustomCursorEdittextView</item>
+    </style>
+
+    <style name="ListFragmentProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+    
+    <style name="DialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+    </style>
+
+    <style name="CustomCursorEdittextView" parent="Widget.AppCompat.AutoCompleteTextView"/>
+    
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="AppTheme.LauncherDark">
+        <item name="android:windowBackground">@drawable/splash_dark</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+    </style>
+</resources>

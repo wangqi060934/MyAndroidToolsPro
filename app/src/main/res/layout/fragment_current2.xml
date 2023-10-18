@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/activity"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/actionbar_color_dark"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/current_activity_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:addStatesFromChildren="true"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="?attr/listPreferredItemHeight"
+                android:paddingBottom="6dp"
+                android:paddingEnd="?android:attr/scrollbarSize"
+                android:paddingLeft="20dp"
+                android:paddingRight="?android:attr/scrollbarSize"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/current_activity_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/current_activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:text="@string/current_activity_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_activity_title"
+                    android:layout_alignStart="@id/current_activity_title"
+                    android:layout_below="@id/current_activity_title"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@id/current_activity_switch"
+                    android:layout_toStartOf="@id/current_activity_switch"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:maxLines="4"
+                    android:text="@string/current_activity_summary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <RelativeLayout
+                android:id="@+id/current_activity_full_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:addStatesFromChildren="true"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="?attr/listPreferredItemHeight"
+                android:paddingBottom="6dp"
+                android:paddingEnd="?android:attr/scrollbarSize"
+                android:paddingLeft="20dp"
+                android:paddingRight="?android:attr/scrollbarSize"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/current_activity_full_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:text="@string/current_activity_show_full_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/current_activity_full_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <RelativeLayout
+                android:id="@+id/current_activity_move_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:addStatesFromChildren="true"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="?attr/listPreferredItemHeight"
+                android:paddingBottom="6dp"
+                android:paddingEnd="?android:attr/scrollbarSize"
+                android:paddingLeft="20dp"
+                android:paddingRight="?android:attr/scrollbarSize"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/current_activity_move_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/current_activity_move_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:text="@string/current_activity_move_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_activity_move_title"
+                    android:layout_alignStart="@id/current_activity_move_title"
+                    android:layout_below="@id/current_activity_move_title"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@id/current_activity_move_switch"
+                    android:layout_toStartOf="@id/current_activity_move_switch"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:maxLines="4"
+                    android:text="@string/current_activity_move_summary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:id="@+id/current_activity_textsize_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/listPreferredItemHeight"
+                android:orientation="vertical"
+                android:paddingBottom="6dp"
+                android:paddingEnd="?android:attr/scrollbarSize"
+                android:paddingLeft="20dp"
+                android:paddingRight="?android:attr/scrollbarSize"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/current_activity_textsize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textsize"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/current_activity_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:max="25" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/fragment"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/actionbar_color_dark"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/current_fragment_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="?attr/listPreferredItemHeight"
+                android:paddingBottom="6dp"
+                android:paddingEnd="?android:attr/scrollbarSize"
+                android:paddingLeft="20dp"
+                android:paddingRight="?android:attr/scrollbarSize"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/current_fragment_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/current_fragment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:text="@string/current_fragment_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_fragment_title"
+                    android:layout_alignStart="@id/current_fragment_title"
+                    android:layout_below="@id/current_fragment_title"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@id/current_fragment_switch"
+                    android:layout_toStartOf="@id/current_fragment_switch"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:maxLines="4"
+                    android:text="@string/current_fragment_summary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <RelativeLayout
+                android:id="@+id/current_fragment_time_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="?attr/listPreferredItemHeight"
+                android:paddingBottom="6dp"
+                android:paddingEnd="?android:attr/scrollbarSize"
+                android:paddingLeft="20dp"
+                android:paddingRight="?android:attr/scrollbarSize"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/current_fragment_time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:text="@string/current_fragment_time_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <TextView
+                    android:id="@+id/current_fragment_time_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_fragment_time_title"
+                    android:layout_alignStart="@id/current_fragment_time_title"
+                    android:layout_below="@id/current_fragment_time_title"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:maxLines="4"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:id="@+id/current_fragment_textsize_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/listPreferredItemHeight"
+                android:orientation="vertical"
+                android:paddingBottom="6dp"
+                android:paddingEnd="?android:attr/scrollbarSize"
+                android:paddingLeft="20dp"
+                android:paddingRight="?android:attr/scrollbarSize"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/current_fragment_textsize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textsize"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/current_fragment_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:max="25" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/hint_first_time"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/actionbar_color_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/current_floating_hint"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.wq.myandroidtoolspro">
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!-- bugly -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- android:name="android.support.multidex.MultiDexApplication" -->
+    <application
+        android:name=".MatApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme"
+        >
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Launcher"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainDarkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:enabled="false"
+            android:icon="@mipmap/ic_launcher_dark"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.LauncherDark"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".PackageAddReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AppInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <!--
+        <activity android:name=".ViewManifestActivity" />
+        -->
+
+        <receiver android:name=".AppInfoReceiver">
+            <intent-filter>
+                <action android:name="cn.wq.myandroidtoolspro.SHOW_APP_INFO" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".ViewManifestActivity2" />
+
+        <!--
+        <service
+            android:name=".recyclerview.fragment.current.ActivityWatchingService"
+            android:label="@string/current_activity_accessibility_service_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/current_activity_accessibility_service" />
+        </service>
+        -->
+
+        <service android:name=".recyclerview.fragment.current.FragmentWatchingService" />
+    </application>
+
+</manifest>

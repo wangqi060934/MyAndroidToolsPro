@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="component_listfragment_title">
+        <item>第三方</item>
+        <item>系統</item>
+    </string-array>
+    <string-array name="receiver_fragment_title">
+        <item>事件</item>
+        <item>第三方</item>
+        <item>系統</item>
+    </string-array>
+    <string-array name="ALL_ACTIONS_SUMMARY">
+        <item>開機事件</item>
+        <item>網路連接改變</item>
+        <item>Wifi連接改變</item>
+        <item>Wifi開啟或關閉</item>
+        <item>時間改變</item>
+        <item>時區改變</item>
+        <item>增加應用</item>
+        <item>刪除應用</item>
+        <item>設備被喚起</item>
+        <item>設備進入睡眠</item>
+        <item>螢幕解鎖</item>
+    </string-array>
+    <string-array name="backup_choose">
+        <item>服務</item>
+        <item>廣播接收器</item>
+        <item>Activity</item>
+        <item>Content Provider</item>
+    </string-array>
+    <string-array name="restore_choose">
+        <item>禁用</item>
+        <item>開啟</item>
+    </string-array>
+    <string-array name="sort_service">
+        <item>按名稱排序</item>
+        <item>正在運行服務數量(降序)</item>
+        <item>已禁用服務數量(降序)</item>
+    </string-array>
+    <string-array name="sort_app">
+        <item>按名稱排序</item>
+        <item>App安裝/更新時間</item>
+        <item>App禁用/開啟時間</item>
+    </string-array>
+    <string-array name="app_manage_title">
+        <item>已開啟</item>
+        <item>已禁用</item>
+        <item>已卸載(系統app)</item>
+    </string-array>
+    <string-array name="query_operation">
+        <item>包含</item>
+        <item>=</item>
+        <item>&gt;</item>
+        <item>&gt;=</item>
+        <item>&lt;</item>
+        <item>&lt;=</item>
+    </string-array>
+</resources>

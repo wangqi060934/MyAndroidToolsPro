@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:scaleType="fitXY" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:layout_toLeftOf="@id/checkbox"
+            android:layout_toEndOf="@id/icon"
+            android:layout_toStartOf="@id/checkbox"
+            android:duplicateParentState="true"
+            android:singleLine="true"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <TextView
+            android:id="@+id/receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:layout_toLeftOf="@id/checkbox"
+            android:layout_toEndOf="@id/icon"
+            android:layout_toStartOf="@id/checkbox"
+            android:layout_below="@id/app_name"
+            android:duplicateParentState="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

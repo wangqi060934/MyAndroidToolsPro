@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_margin="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        app:srcCompat="@drawable/ic_info_white"
+        android:tint="@color/actionbar_color"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_toRightOf="@id/icon"
+        android:layout_toEndOf="@id/icon"
+        android:layout_toLeftOf="@id/info"
+        android:layout_toStartOf="@id/info"/>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_below="@id/label"
+        android:layout_alignStart="@id/label"
+        android:layout_alignLeft="@id/label"
+        android:textSize="12sp"
+        android:textColor="?android:attr/textColorTertiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

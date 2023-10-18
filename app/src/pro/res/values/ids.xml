@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="backup_info"/>
+    <item type="id" name="pro_version"/>
+    <item type="id" name="detail"/>
+</resources>

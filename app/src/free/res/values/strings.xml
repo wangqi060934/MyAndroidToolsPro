@@ -1,0 +1,224 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyAndroidTools</string>
+
+    <!-- navigation-->
+    <string name="component_info">Component Info</string>
+    <string name="service">Service</string>
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="activity">Activity</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="data_info">Data Info</string>
+    <string name="sharedPreferences">SharedPreferences</string>
+    <string name="database">Database</string>
+    <string name="running_info">Running Info</string>
+    <string name="process">Process</string>
+    <string name="logcat">Logcat</string>
+    <string name="Uid">UID</string>
+    <string name="other_info">Other Info</string>
+    <string name="apps">Apps</string>
+    <string name="about">About</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="toast_adb">I suggest you enable USB debugging mode on Android 2.3 or lower!</string>
+    <string name="wait">Wait&#8230;</string>
+
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+    <string name="refresh">Refresh</string>
+    <string name="level">Level</string>
+    <string name="hint_app_search">search by name</string>
+    <string name="hint_process_search">search by pid/uid</string>
+    <string name="hint_logcat_search">search by pid/tag/log</string>
+    <string name="hint_component_search">search by name</string>
+    <string name="multi_select">Multi-select</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="email">wangqi060934@gmail.com</string>
+    <string name="website" tools:ignore="MissingTranslation">https://www.myandroidtools.com</string>
+    <string name="rate">Rate</string>
+    <string name="share">Share</string>
+    <string name="donate">Donate</string>
+    <string name="failed_to_gain_root">Failed to gain root access!</string>
+    <string name="format_viewpager_tag">android:switcher:%1$d:%2$d</string>
+    <string name="full_or_short">Full/Short</string>
+    <string name="disallow_disable_admob">Not allowed to disable the admob activity.</string>
+    <string name="level_default">Verbose(Default)</string>
+    <string name="level_debug">Debug</string>
+    <string name="level_info">Info</string>
+    <string name="level_warn">Warn</string>
+    <string name="level_error">Error</string>
+    <string name="level_assert">Assert</string>
+    <string name="format_save_path">Saved in %s</string>
+    <string name="more">More</string>
+    <string name="need_external_storage">Don\'t find external storage!</string>
+
+    <string name="query">Query</string>
+    <string name="selectAll">Select/Deselect All</string>
+    <string name="pre_value">Value:</string>
+    <string name="edit">Edit:</string>
+    <string name="trueValue">True</string>
+    <string name="falseValue">False</string>
+    <string name="input_error_int">It\'s not a valid integer value.</string>
+    <string name="input_error_long">It\'s not a valid long value.</string>
+    <string name="input_error_float">It\'s not a valid float value.</string>
+    <string name="type">type</string>
+    <string name="name">name</string>
+    <string name="value">value</string>
+    <string name="format_type">Type: %s</string>
+    <string name="format_name">Name: %s</string>
+
+    <string name="backup">Backup</string>
+    <string name="backup_only_3rd_party">Only third party apps</string>
+    <string name="backup_disabled_of_an_app">Backup the disabled components of this app</string>
+    <string name="restore">Restore</string>
+    <string name="backup_edit">Edit</string>
+    <string name="media_not_mounted">Media not mounted!</string>
+    <string name="operation_failed">Operation failed!</string>
+    <string name="uninstall_restore_success_toast">This app will shown after you reboot your phone.</string>
+    <string name="operation_done">Done!</string>
+    <string name="backup_done">Done!Saved at %s</string>
+    <string name="backup_category">For Disabled Components:</string>
+    <string name="app_has_been_uninstalled">This app has been uninstalled.</string>
+    <string name="detail">Detail</string>
+    <string name="sort_by">Sort by</string>
+    <string name="copy">Copy</string>
+    <string name="copy_toast">Text copied to clipboard.</string>
+    <string name="delete">Delete</string>
+    <string name="uid">Uid</string>
+    <string name="stop">Stop</string>
+    <string name="title_apps">Apps</string>
+    <string name="hint_app_manage_search">search by app/package name</string>
+
+    <string name="installed_time">Installed time:</string>
+    <string name="package_name">Package name:</string>
+    <string name="package_name_system">Package name:(System App)</string>
+    <string name="package_name_third_party">Package name:(Third-Party App)</string>
+    <string name="apk_path">Apk path:</string>
+    <string name="app_manage_action">Action:</string>
+    <string name="storage">Storage</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="clear_data">Clear data</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="data">Data</string>
+    <string name="cache">Cache</string>
+    <string name="open">Open</string>
+    <string name="app_manage_all_info">See all component info</string>
+    <string name="empty">Empty</string>
+    <string name="see_all_actions">All/Part</string>
+
+    <string name="showAfterPackageAdd">Display the component info after an app installed</string>
+
+    <!-- logcat -->
+    <string name="pre_process_name">Name: %s</string>
+    <string name="pre_pid">Pid: %d</string>
+    <string name="pre_pkg_list">Package:</string>
+    <string name="pre_importance">Importance: %s</string>
+    <string name="pre_pss_memory">PSS Memory Usage: %.2f MB</string>
+    <string name="pre_rss_memory">RSS Memory Usage: %.2f MB</string>
+    <string name="pre_uid">Uid: %d</string>
+    <string name="pre_tag">Tag:</string>
+    <string name="pre_level">Level:</string>
+    <string name="pre_application">Application:</string>
+    <string name="pre_time">Time: %s</string>
+    <string name="pre_log">Log:</string>
+
+    <!-- new -->
+    <string name="permission_request_failed">Sorry,I don\'t have the permission to acess the external storage.You can grant it in the system settings.</string>
+    <string name="hint_first_time">Hint</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="running_in_background">Running in background currently</string>
+    <string name="language_english">Using the English language</string>
+    <string name="choose_language">Language</string>
+    <string name="add">Add</string>
+    <string name="clone_record">Clone record</string>
+    <string name="delete_current_page">delete data of current page</string>
+    <string name="delete_current_page_warning">Do you really want to delete all data of current page?</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="xposed_module">Xposed Module:</string>
+    <string name="xposed_module_name">MyAndroidTools Xposed Module</string>
+    <string name="create_table_statement">create table statement</string>
+    <string name="search_by_action_name">Search by action name</string>
+    <string name="view_manifest">View manifest</string>
+    <string name="search_component_in_all_apps">Search component in all apps</string>
+    <string name="search_in_all_services">Search in all services</string>
+    <string name="search_in_all_receiver">Search in all receivers</string>
+    <string name="search_in_all_activity">Search in all activities</string>
+    <string name="search_in_all_provider">Search in all providers</string>
+
+    <string name="backup_file_title">Choose a file to restore:(/sdcard/myandroidtools/*)</string>
+    <string name="backup_delete_failed">Please choose a file at first and make sure the file exists.</string>
+    <string name="backup_rename_title">Rename the backup file</string>
+    <string name="backup_to_ifw_format">Save another backup in intent firewall format</string>
+    <string name="backup_file_exists">A file with this name is already exists.</string>
+    <string name="backup_file_name_empty">The file name should not be empty</string>
+    <string name="backup_content_empty">The file content should not be empty</string>
+    <string name="backup_file_rename_failed">Rename failed.</string>
+    <string name="backup_file_ext_wrong">The file need to end with \".ifw\"</string>
+    <string name="open_database_in_sdcard">Open db file in SDcard</string>
+    <string name="choose_db_from_sdcard">Choose a db file from SDcard</string>
+    <string name="invalid_db_file">It\'s not a valid database file.</string>
+
+    <string name="warning">Warning</string>
+    <string name="uninstall_message">Ensure to uninstall this app:%s</string>
+
+    <!-- current -->
+    <string name="current">Current</string>
+    <string name="current_activity_accessibility_service_name">Current Activity(MAT)</string>
+    <string name="current_accessibility_service_summary">MyAndroidTools need this to display current activity.</string>
+    <string name="current_accessibility_service_desc">MyAndroidTools use accessbility service to monitor the change of current activity and display it\'s name.</string>
+    <string name="current_activity_title">Display Current Activity</string>
+    <string name="current_activity_summary">Need to active the accessbility service</string>
+    <string name="current_fragment_title">Display Current Fragment</string>
+    <string name="current_fragment_time_title">Interval Time (millisecond)</string>
+    <string name="current_fragment_summary">Need Root Access,draggable(It is quite performance hungry,turn it off immediatelly when you do not need to show the current fragment.)</string>
+    <string name="accessibility_dialog_title">Hint</string>
+    <string name="accessibility_dialog_message_enable">You have to enable the accessibility service named \"Current Activity(MAT)\" in the system settings.\r\n\r\nClick OK to enable it.</string>
+    <string name="accessibility_dialog_message_disable">You have to disable the accessibility service named \"Current Activity(MAT)\" in the system settings.\r\n\r\nClick OK to disable it.</string>
+    <string name="process_root_default">Use root privilege by default</string>
+    <string name="fragment">Fragment</string>
+    <string name="current_activity_show_full_name">Displace the full name</string>
+    <string name="current_activity_move_title">Move mode</string>
+    <string name="current_activity_move_summary">In move mode,you can drag the floating view.</string>
+    <string name="current_fragment_empty">*Not found fragment currentlly*</string>
+    <string name="current_floating_hint">1.In some custom roms,you have to grant \"Display popup window\" permission to this app in the system settings.\n2.Since android 6.0,you need to grant \"Draw on top of other apps\" permission to this app.</string>
+    <string name="floating_permission_hint">You need to grant the permission to let this app to draw on top of other apps.</string>
+    <string name="textsize">Text size</string>
+    <string name="open_lincense">Open-source License</string>
+    <!-- current root -->
+    <string name="current_activity_summary_root">Need Root Access</string>
+
+
+    <!-- new -->
+    <string name="usage_permission_hint">You need to grant usage access to this app.</string>
+    <string name="theme">Theme</string>
+    <string name="parent_directory">Parent Directory</string>
+    <string name="root_failed_to_get_running_service">Warning:need root access to get running service on Android Oreo+</string>
+    <string name="component_not_exist">This component does not exist in this app actually.</string>
+    <string name="a_component_not_exist">A component does not exist actually.</string>
+
+    <string name="share_information">Share a root android app:MyAnroidTools.（https://www.myandroidtools.com）</string>
+    <string name="offical_website">https://www.myandroidtools.com</string>
+    <string name="pm_channel">Package manager channel</string>
+    <string name="shizuku_not_installed">Please install "Shizuku Manager" at first!</string>
+    <string name="shizuku_auth_failed">Shizuku authorization failed!</string>
+    <string name="shizuku_run_command_failed">Faild to execute command by shizuku: %s!</string>
+    <string name="shizuku_auth_success">Shizuku authorization success!</string>
+    <string name="ifw_save_failed">Faild to save intent firewall file!</string>
+    <string name="close_bugly">Close crash report</string>
+    <string name="update_check">Update check</string>
+    <string name="has_new_version">A new version available</string>
+    <string name="no_new_version">You are using the latest version!</string>
+    <string name="version_title">Version:</string>
+    <string name="info_title">Info:</string>
+    <string name="download">Download</string>
+    <string name="load_ifw_by_root_failed">Faild to retrive the IFW file</string>
+    <string name="checking_new_version">Checking update&#8230;</string>
+    <string name="check_version_failed">Failed to check new version</string>
+    <string name="failed_to_load_backup_file">Failed to load the backup file</string>
+    <string name="hint_delete_empty_backup_file">Do not find any valid component in this file. Do you want to delete this file?</string>
+    <string name="hint_pm_channel_ifw">Do you want to merge all intent firewall data?</string>
+</resources>

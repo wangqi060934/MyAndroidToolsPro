@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:paddingEnd="10dp"
+              android:paddingLeft="5dp"
+              android:paddingRight="10dp"
+              android:paddingStart="5dp"
+              android:paddingTop="10dp"
+    >
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/actionbar_color"
+        android:visibility="gone"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/wall"
+        app:srcCompat="@drawable/ic_wall"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/actionbar_color"
+        android:visibility="gone"
+        android:id="@+id/home"
+        app:srcCompat="@drawable/ic_home_white_18dp"/>
+
+</LinearLayout>

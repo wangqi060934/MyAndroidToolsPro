@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        app:showAsAction="never" />
+    <!--
+    <item
+        android:id="@+id/rate"
+        android:title="@string/rate"
+        app:showAsAction="never" />
+        -->
+    <item
+        android:id="@+id/donate"
+        android:title="@string/donate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/updateCheck"
+        android:title="@string/update_check"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/lincense"
+        android:title="@string/open_lincense"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/bugly"
+        android:title="@string/close_bugly"
+        android:checkable="true"
+        app:showAsAction="never" />
+</menu>

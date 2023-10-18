@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ff04aeda -->
+    <color name="actionbar_color">#FF2196F3</color>
+    <color name="actionbar_color_dark">#FF1976D2</color>
+    <color name="actionbar_color_light">#662196F3</color>
+
+    <color name="holo_red_light">#ffff4444</color>
+
+    <!-- log -->
+    <color name="log_debug">#ff00aeda</color>
+    <color name="log_info">#ff007f00</color>
+    <color name="log_warn">#ffff7f00</color>
+    <color name="log_error">#ffff0000</color>
+    <color name="blue_grey_500">#FF607D8B</color>
+    <color name="blue_grey_700">#FF455A64</color>
+</resources>

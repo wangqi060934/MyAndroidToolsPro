@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="component_listfragment_title">
+        <item>Third Party</item>
+        <item>System</item>
+    </string-array>
+    <string-array name="receiver_fragment_title">
+        <item>Actions</item>
+        <item>Third Party</item>
+        <item>System</item>
+    </string-array>
+    <string-array name="ALL_ACTIONS_SUMMARY">
+        <item>Boot Completed</item>
+        <item>Network connectivity changed</item>
+        <item>Wi-Fi connectivity changed</item>
+        <item>Wi-Fi enable/disabled</item>
+        <item>Time Changed</item>
+        <item>Timezone Changed</item>
+        <item>Package Added</item>
+        <item>Package Removed</item>
+        <item>Screen On</item>
+        <item>Screen Off</item>
+        <item>User Present (e.g when the keyguard is gone)</item>
+    </string-array>
+    <string-array name="log_color">
+        <item>android.R.color.black</item>
+        <item>R.color.log_debug</item>
+        <item>R.color.log_info</item>
+        <item>R.color.log_warn</item>
+        <item>R.color.log_error</item>
+        <item>R.color.log_error</item>
+    </string-array>
+    <string-array name="log_level">
+        <item>Verbose(Default)</item>
+        <item>Debug</item>
+        <item>Info</item>
+        <item>Warn</item>
+        <item>Error</item>
+        <item>Assert</item>
+    </string-array>
+    <string-array name="query_operation">
+        <item>contains</item>
+        <item>=</item>
+        <item>&gt;</item>
+        <item>&gt;=</item>
+        <item>&lt;</item>
+        <item>&lt;=</item>
+    </string-array>
+    <string-array name="backup_choose">
+        <item>Service</item>
+        <item>Broadcast Receiver</item>
+        <item>Activity</item>
+        <item>Content Provider</item>
+    </string-array>
+    <string-array name="restore_choose">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+    <string-array name="sort_service">
+        <item>Alphabetically</item>
+        <item>Running num (desc)</item>
+        <item>Disabled num (desc)</item>
+    </string-array>
+    <string-array name="sort_app">
+        <item>Alphabetically</item>
+        <item>The install/update time</item>
+        <item>The enabled/disabled time</item>
+    </string-array>
+    <string-array name="app_manage_title">
+        <item>Enabled</item>
+        <item>Disabled</item>
+        <item>Uninstalled(System app)</item>
+    </string-array>
+</resources>

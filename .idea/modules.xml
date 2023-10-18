@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GridNavigationView-master/GridNavigationView-master.iml" filepath="$PROJECT_DIR$/GridNavigationView-master/GridNavigationView-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyAndroidToolsPro.iml" filepath="$PROJECT_DIR$/MyAndroidToolsPro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inmobiad/inmobiad.iml" filepath="$PROJECT_DIR$/inmobiad/inmobiad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tencentad/tencentad.iml" filepath="$PROJECT_DIR$/tencentad/tencentad.iml" />
+    </modules>
+  </component>
+</project>

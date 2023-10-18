@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preference/>
+<!--
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagIncludeNotImportantViews"
+    android:description="@string/current_accessibility_service_summary"
+    tools:ignore="UnusedAttribute" />
+    -->
+    <!--android:summary="@string/current_accessibility_service_summary"-->

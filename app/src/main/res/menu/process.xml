@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/search_process"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search"
+        yourapp:actionViewClass="android.support.v7.widget.SearchView"
+        yourapp:showAsAction="ifRoom|collapseActionView">
+    </item>
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh_white"
+        android:title="@string/refresh"
+        yourapp:showAsAction="ifRoom">
+	</item>
+</menu>

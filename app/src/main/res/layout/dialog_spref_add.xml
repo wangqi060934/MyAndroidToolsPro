@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: "
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/actionbar_color"/>
+
+        <Spinner
+            android:id="@+id/type"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/type_title"
+            android:layout_toEndOf="@id/type_title"
+            android:layout_toRightOf="@id/type_title"/>
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type"
+            android:text="Name: "
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/actionbar_color"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_title"/>
+
+        <TextView
+            android:id="@+id/value_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="@string/pre_value"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/actionbar_color"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/value_title">
+
+            <EditText
+                android:id="@+id/value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/boolChoose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/trueValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/trueValue"/>
+
+                <RadioButton
+                    android:id="@+id/falseValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/falseValue"/>
+            </RadioGroup>
+        </FrameLayout>
+    </RelativeLayout>
+</ScrollView>
+

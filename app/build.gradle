@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+//    buildToolsVersion '25.0.3'
+    //com.android.support:design:25.2.0不支持sdk 8
+    defaultConfig {
+        applicationId "cn.wq.myandroidtoolspro"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode new Date().format("yyyyMMddHH").toInteger() //92
+        versionName "1.6.9.beta"
+        multiDexEnabled true
+        //https://developer.android.com/guide/topics/graphics/vector-drawable-resources
+        //使用app:srcCompat兼容21以前的版本，否则编译时vector会自动生成各分辨率的png图标
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            abiFilters 'armeabi' , 'x86'
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            multiDexKeepProguard file('multidex-config.pro')
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+
+    flavorDimensions("money","channel")
+    productFlavors {
+//        pro {
+//            dimension "money"
+//            buildConfigField "boolean", "isFree", "false"
+//        }
+
+        free {
+            dimension "money"
+            applicationId "cn.wq.myandroidtools"
+//            minSdkVersion 15
+//            targetSdkVersion 27
+//            versionCode 61
+//            versionName "0.12"
+//            versionName "1.6.5"
+//            project.buildscript.classpath 'com.google.gms:google-services:3.0.0'
+
+            buildConfigField "boolean","isFree","false"
+        }
+
+        noad{
+            dimension "channel"
+            buildConfigField "String", "apk_channel", "\"noad\""
+        }
+    }
+
+    applicationVariants.all { variant ->
+        if (variant.buildType.name == "release"
+//                && variant.flavorName == 'pro'
+                ) {
+            //variant.assemble.doLast
+            variant.assembleProvider.get().doLast {
+                println "---------打包开始-----------"
+                String outputDir = "${rootDir}/output/"
+                String flavor = variant.flavorName[0].toUpperCase() + variant.flavorName[1..-1]
+                copy {
+                    from variant.outputs*.outputFile
+                    into outputDir
+                    rename {
+                        "MyAndroidTools${flavor}_${versionName}.apk"
+                    }
+                }
+                println variant.outputs
+                delete variant.outputs*.outputFile
+
+                copy {
+                    from variant.mappingFile
+                    into outputDir
+                    rename {String fileName ->
+                        def index = fileName.lastIndexOf(".")
+                        "${fileName.substring(0,index)}_${variant.flavorName}_${versionName}.${fileName.substring(index + 1)}"
+                    }
+                }
+
+                println "================打包完成=============="
+                println "路径：${outputDir}，版本：${versionName}（${versionCode}）"
+            }
+
+        }
+    }
+
+}
+
+//du_ad
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compileOnly 'com.android.support:appcompat-v7:28.0.0'
+    compileOnly 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    compileOnly project(':GridNavigationView-master')
+    implementation project(':core')
+
+    implementation 'com.tencent.mars:mars-xlog:1.0.6'
+    implementation 'com.tencent.bugly:crashreport:2.8.6'
+
+    implementation 'moe.shizuku.privilege:api-base:9'
+    implementation 'moe.shizuku.privilege:api-26:4'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+// Because RxAndroid releases are few and far between, it is recommended you also
+// explicitly depend on RxJava's latest version for bug fixes and new features.
+// (see https://github.com/ReactiveX/RxJava/releases for latest 2.x.x version)
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+}

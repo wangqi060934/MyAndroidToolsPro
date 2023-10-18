@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_component"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView">
+    </item>
+    <item
+        android:id="@+id/toggle_name"
+        android:icon="@drawable/ic_full_name_white"
+        android:title="@string/full_or_short"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/start_multi_select"
+        android:icon="@drawable/ic_start_multi_select_white"
+        android:title="@string/multi_select"
+        app:showAsAction="ifRoom">
+    </item>
+</menu>
